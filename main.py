@@ -7,6 +7,8 @@ import os
 import openpyxl
 from openpyxl import Workbook
 
+#Fix calender and icon
+
 def clear_input():
 
     msg_box = tk.messagebox.askquestion('DELETE ALL', 'Are you sure you want to clear the form?',
@@ -89,7 +91,6 @@ def enter_data():
 
 window = tk.Tk()
 window.title("Racquet Stringing Form")
-window.iconbitmap("kyrgios.ico")
 
 frame = tk.Frame(window)
 frame.pack()
@@ -235,6 +236,7 @@ stencil_cost_entry.grid(row=2,column=3)
 
 date = tk.Label(cost_frame,text="Date")
 date.grid(row=1,column=5)
+
 cal = DateEntry(cost_frame,selectmode='day')
 cal.grid(row=2,column=5)
 
